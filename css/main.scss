@@ -1,0 +1,22 @@
+//colors
+$orange: #e45028;
+$yellow: #f9b43b;
+$black: #2f3234;
+$red: #e35028;
+$white: #fff;
+
+//normalize
+@import "layout/normalize.scss";
+
+// setups
+@import "layout/mixins";
+@import "layout/fonts";
+@import "layout/base";
+
+// blocks
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/btn";
+@import "blocks/promo";
+@import "blocks/reviews";
+@import "blocks/best";

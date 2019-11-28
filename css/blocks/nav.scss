@@ -1,0 +1,36 @@
+
+
+.nav__list{
+    display: flex;
+    align-items: center;
+}
+
+.nav__item{
+    display: flex;
+    align-items: center;
+    margin-right: 17px;
+
+    &:after {
+        content: "";
+        width: 4px;
+        height: 4px;
+        background-color: $white;
+        border-radius: 50%;
+        display: block;
+        margin-left: 17px;
+    }
+
+    &:nth-last-child(2) {
+        &:after {
+          display: none;
+        }
+    }
+}
+
+.nav__link {
+    //@include ubuntu(medium);
+    //text-decoration: none;
+    color: $white;
+    font-size: 13px;
+    text-transform: uppercase;
+  }

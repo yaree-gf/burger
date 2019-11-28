@@ -1,0 +1,56 @@
+.best {
+    height: 100vh;
+     background-image: url("/img/bg/bg-best.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+   }
+
+.best__container {
+    height: 100%;
+  }
+  
+/*.best__content {
+    display: flex;
+    align-items: center;
+  }*/
+
+  .best__list {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 55px;
+  padding-bottom: 15px;
+  }
+
+  .best__item {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    width: 33.3%;
+    padding: 0 10px;
+  }
+
+  .best__icon {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    //position: relative;
+    //margin-bottom: 15px;
+  }
+
+  .best__subtitle {
+    @include lifehack();
+    font-size: 24px;
+    font-weight: 500;
+    color: $black;
+  }
+
+  .best__text {
+    color: $black;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+  }
