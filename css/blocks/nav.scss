@@ -1,4 +1,9 @@
-
+.nav {
+    margin-right: rem(17px);
+    @include tablets {
+        display: none;
+	}
+}
 
 .nav__list{
     display: flex;
@@ -8,21 +13,22 @@
 .nav__item{
     display: flex;
     align-items: center;
-    margin-right: 17px;
+    margin-right: rem(17px);
 
     &:after {
         content: "";
-        width: 4px;
-        height: 4px;
+        width: rem(4px);
+        height: rem(4px);
         background-color: $white;
         border-radius: 50%;
         display: block;
-        margin-left: 17px;
+        margin-left: rem(17px);
     }
 
-    &:nth-last-child(2) {
-        &:after {
-          display: none;
+    &:last-child {
+		margin-right: 0;
+		&:after {
+			display: none;
         }
     }
 }
@@ -31,6 +37,6 @@
     //@include ubuntu(medium);
     //text-decoration: none;
     color: $white;
-    font-size: 13px;
+    font-size: rem(13px);
     text-transform: uppercase;
   }
